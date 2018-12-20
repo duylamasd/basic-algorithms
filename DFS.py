@@ -39,7 +39,7 @@ class Graph:
         stack.push(s)
 
         while not stack.empty():
-            # Pop a vertax from stack
+            # Pop a vertex from stack
             s = stack.pop()
 
             if not visited[s]:
