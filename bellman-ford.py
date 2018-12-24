@@ -69,7 +69,7 @@ class Graph:
                 if self.has_negative_cycle(i, dist):
                     return True
                 
-                for j in range(self.num_of_vertices):
+                for _ in range(self.num_of_vertices):
                     if dist[i] != MAX_INT:
                         visited[i] = True
 
