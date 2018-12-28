@@ -46,12 +46,9 @@ class Graph:
                 print s
                 visited[s] = True
 
-            print visited
-
             for node in self.adjecency[s]:
                 if not visited[node]:
                     stack.push(node)
-        print s
 
     def is_cyclic_util(self, v, visited, rec_stack):
         """
@@ -103,3 +100,4 @@ g.add_edge(2, 3)
 g.add_edge(3, 3)
 
 print g.is_cyclic()
+print g.dfs(0)
